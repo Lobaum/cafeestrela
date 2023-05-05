@@ -1,143 +1,277 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-}
-
-.ini > img {
-  height: 60px;
-  margin-left: 15px;
-}
-
-.ini {
-  background-color: rgb(255, 255, 255);
-  display: flex;
-  box-shadow: -3px 2px 3px 0.5px rgba(0, 0, 0, 0.393);
-  font-family: Arial, Helvetica, sans-serif;
+.cab {
+    font-family: Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: space-between;
     min-height: 90px;
     flex-wrap: wrap;
-  
 }
-
-.menu > li {
-  align-items: center;
-  display: flex;
-  height: 60px;
-}
-.menu {
-  display: flex;
+.le {
+    display: flex;
     align-items: center;
     padding-left: 27px;
     padding-top: 15px;
     flex-wrap: wrap;
 }
-
-
-.item {
-  background-image: linear-gradient(to right,#02680f,#02680f 50%,#000000 50%);
-  background-size: 200% 100%;
-  background-position: -100%;
-  display: inline-block;
-  padding: 5px 0;
-  position: relative;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: all 0.3s ease-in-out;
-  font-weight: 400px;
-  margin-right: 10px;
-  margin-left: 10px;
+.logo {
+    width: 55px;
+    height: 55px;
+    margin-right: 15px;
+    flex-wrap: wrap;
 }
-
-.item:before{
-  content: '';
-  background: #02680f;
-  display: block;
-  position: absolute;
-  bottom: -3px;
-  left: 0;
-  width: 0;
-  height: 3px;
-  transition: all 0.3s ease-in-out;
+.le > a {
+    margin: 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
 }
-
-.item:hover {
- background-position: 0;
+.le > a:hover {
+    color: rgb(1, 196, 1);
 }
-
-.item:hover::before{
-  width: 100%;
-}
-
-.menu2 {
-display: flex;
+.ri {
+    display: flex;
     align-items: center;
     margin: 15px;
     font-size: 15px;
     padding-top: 15px;
     flex-wrap: wrap;
-  
 }
-
-.menu2 > li {
-  align-items: center;
-  display: flex;
-  height: 60px;
-}
-
-.item2 {
-  background-image: linear-gradient(to right,#02680f,#02680f 50%,#000000 50%);
-  background-size: 200% 100%;
-  background-position: -100%;
-  display: inline-block;
-  padding: 5px 0;
-  position: relative;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: all 0.3s ease-in-out;
-  font-weight: 400px;
-  margin-right: 10px;
-  margin-left: 20px;
-  font-size: medium;
-}
-
-.entrar {
-  border: 1px solid black;
-    border-radius: 20px;
-    padding: 5px 10px;
-    margin-left: 10px;
-    margin-right: 10px;
+.ri > a {
+    margin-right: 15px;
     text-decoration: none;
-    color: #000000;
 }
-.entrar:hover {
-    background-color: lightgrey;
-    transition: 0.5s;
-    box-shadow: 2px 2px 2px gray;
+.aim {
+    color: black;
 }
-
-.participe {
-  background-color: black;
+.br {
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: solid 1px black;
+    border-radius: 90px;
+    color: black;
+    transition: 100ms;
+}
+.br:hover {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    box-shadow: 0 2px 5px black;
+    transition: 100ms;
+}
+.pr {
+    background-color: black;
+    border-radius: 90px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
     color: white;
-    border-radius: 20px;
-    padding: 5px 10px;
+    transition: 100ms;
+}
+.pr:hover {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    box-shadow: 0 2px 5px black;
+    transition: 100ms;
+}
+nav {
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    flex-wrap: wrap;
+}
+.f1 {
+    background-image: url(/StarCoffee/img/capasite.jpg);
+    background-size: cover;
+    width: 1450px;
+    height: 400px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+.f2 {
+    background-color: rgba(124, 244, 204, 0.21);
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 20px;
+    width: 1450px;
+    height: 120px;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.f2 > p {
+    text-align: center;
+    color: rgba(49, 89, 76, 0.807);
+}
+.saiba {
+    padding: 7px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: solid 1px rgba(49, 89, 76, 0.807);
+    border-radius: 90px;
+    color: rgba(49, 89, 76, 0.807);
+    transition: 100ms;
     text-decoration: none;
 }
-
-.one{  
-  background-image: url(/StarCoffee/img/capasite.jpg);
-  height: 400px;
-  display: flex;
-  align-items: center;
-  background-repeat: no-repeat;
-  color: white;
-  text-align: center;
-  margin-left:  50px;
-  margin-right: 5 0px;
+.saiba:hover {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-shadow: 0 1px 2px black;
+    transition: 100ms;
+    background-color: rgba(90, 153, 133, 0.085);
+    font-size: 15px;
+}
+.f3 {
+    background-color: rgba(124, 244, 204, 0.21);
+    width: 1450px;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: flex;
+    height: 600px;
+    flex-wrap: wrap;
+}
+.im {
+    background-image: url(/StarCoffee/img/site1.jpg);
+    background-size: cover;
+    width: 725px;
+    flex-wrap: wrap;
+}
+.tex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 80px;
+    color: rgba(49, 89, 76, 0.807) ;
+    flex-wrap: wrap;
+}
+h2 {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.tex > p {
+    text-align: center;
+}
+p {
+    font-size: 20px;
+    font-weight: 400;
+}
+.but > a {
+    border: 1px solid rgba(49, 89, 76, 0.807);
+    text-decoration: none;
+    border-radius: 90px;
+    color: rgba(49, 89, 76, 0.807);
+    padding: 6px;
+    font-weight: 600;
+    transition: 100ms;
+}
+.but > a:hover {
+    font-size: 14px;
+    transition: 100ms;
+    box-shadow: 0 1px 3px black;
+    background-color: rgba(90, 153, 133, 0.085);
+}
+.f4 {
+    background-color: rgba(124, 244, 204, 0.21);
+    width: 1450px;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: flex;
+    height: 400px;
+    flex-wrap: wrap;
+}
+.im2 {
+    background-image: url(/StarCoffee/img/site2.jpg);
+    background-size: cover;
+    width: 725px;
+    flex-wrap: wrap;
+}
+.tex2 {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgba(49, 89, 76, 0.807) ;
+    width: 725px;
+    flex-wrap: wrap;
+}
+.im3 {
+    background-image: url(/StarCoffee/img/site3.jpg);
+    background-size: cover;
+    width: 725px;
+    flex-wrap: wrap;
+}
+.f5 {
+    background-color: rgba(124, 244, 204, 0.21);
+    width: 1450px;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: flex;
+    height: 400px;
+    flex-wrap: wrap;
+}
+.tex3 {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgba(49, 89, 76, 0.807) ;
+    width: 725px;
+    flex-wrap: wrap;
+}
+.im4 {
+    background-image: url(/StarCoffee/img/site4.jpg);
+    background-size: cover;
+    width: 725px;
+    flex-wrap: wrap;
+}
+footer {
+    box-shadow: 0px -1px 5px black;
+    flex-wrap: wrap;
+}
+.ter {
+    display: flex;
+    flex-direction: row;
+    font-family: sans-serif;
+    justify-content: center;
+    margin-top: 25px;
+    padding-left: 90px;
+    flex-wrap: wrap;
+}
+.lis {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.lis > a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.518);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+.lis > a:hover {
+    color: black;
+}
+.mage {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.mage > a {
+    margin: 10px;
+}
+.x {
+    margin: 20px;
+    margin-left: 120px;
+    margin-right: 120px;
+    flex-wrap: wrap;
 }
